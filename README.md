@@ -44,6 +44,12 @@ sudo apt install xte
 sudo apt install xautomation
 ```
 
+Comando que seta a posição do mouse na tela, caso queira paginar.
+
+```
+xte 'mousemove 1200 450'
+```
+
 ## Ferramentas utilizadas no projeto
 
 - Visual Studio Code
@@ -54,8 +60,12 @@ sudo apt install xautomation
 
 ### Uma vez atendidos os pré-requisito, basta executar seguintes códigos:
 
-Apos ter baixado o projeto, basta executar o seguinte comando no terminal dentro da raiz do projeto.
+Apos ter baixado o projeto, basta os seguintes e comando no terminal dentro da raiz do projeto.
 
+- Terminal aberto.
+- Browser com a imagem aberta.
+- Executar o seguinte comando.
+  
 ```
 ./screen.sh
 ```
