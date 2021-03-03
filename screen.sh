@@ -1,28 +1,30 @@
 #!/bin/bash
 
-#Esse trecho é apenas pra passar a primeira execução que gera um erro
-xte 'mousemove 3200 200'
-sleep 1
-xte 'mouseclick 1'
+# Variável pra contagem a cada 2 indices
+incremento=2
 
-xte "str :screenshot --selector #page"
-xte 'key Return'
+# Variável que guarda o valor do indice final
+indiceFinal=74
 
-#Fim
 
-for i in {1..35};do
-    #Clica no console do navegador
-    xte 'mousemove 3200 200'
+# Cada execução do laço baixa 2 imagens
+for (( i = 2 ; i <= $indiceFinal; i += $incremento ));do
+    # Clica no console do navegador
+    xte 'mousemove 1200 450'
     sleep 2
     xte 'mouseclick 1'
 
-    #Tirando screenshot e numerando a página
-    xte "str :screenshot --selector #page$i page$i.png"
+    # Tirando screenshot e numerando a página
+    xte "str :screenshot --selector .p$i $i.png"
     xte 'key Return'
     sleep 2
 
-    #Paginando
-    xte 'mousemove 2260 140'
+    xte "str :screenshot --selector .p$(($i+1)) $(($i+1)).png"
+    xte 'key Return'
+    sleep 2
+
+    # Paginando
+    xte 'mousemove 936 450'
     sleep 1
     xte 'mouseclick 1'
     sleep 1
