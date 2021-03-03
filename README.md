@@ -66,7 +66,6 @@ Desenvolvido em linux.
 
 ## Autor
 
-Foto do autor com link para alguma rede.
 <table>
   <tr>
     <td align="center">
@@ -82,7 +81,6 @@ Foto do autor com link para alguma rede.
 
 ## Contribuição
 
-Foto dos contribuidores com algum link para algumas de suas redes.
 <table>
   <tr>
     <td align="center">
