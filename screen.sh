@@ -19,6 +19,7 @@ for (( i = 2 ; i <= $indiceFinal; i += $incremento ));do
     xte 'key Return'
     sleep 2
 
+    # Tirando screenshot e numerando a 2 página
     xte "str :screenshot --selector .p$(($i+1)) $(($i+1)).png"
     xte 'key Return'
     sleep 2
